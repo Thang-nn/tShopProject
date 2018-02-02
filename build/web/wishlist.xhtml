@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>tShop - Orders</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="./dashBoardLayout.xhtml">
+            <ui:define name="breadcumb">
+                <section class="breadcrumb-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h2>My Account</h2>
+                                <p>Wishlist</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <ol class="breadcrumb">
+                                    <li><h:link outcome="index" value="Home"/></li>
+                                    <li><h:link outcome="account" value="My Account"/></li>
+                                    <li class="active">Wishlist</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ui:define>
+
+            <ui:define name="dashBoardContent">
+                <article class="account-content">
+                    <h3>Wishlist</h3>
+                    <div class="table-responsive">
+                        <table class="table table-products">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-1"><h:graphicImage name="images/products/product-1.jpg" alt="" class="img-responsive"/></td>
+                                    <td class="col-xs-4 col-md-5"><h4><a href="single-product.html">Fusce Aliquam</a><small>M, Black, Esprit</small></h4></td>
+                                    <td class="col-xs-2 col-md-1 text-center"><span><b>1 items</b></span></td>
+                                    <td class="col-xs-2 text-center"><span><b>$60</b></span></td>
+                                    <td class="col-xs-2 text-center"><a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></a><a href="" class="btn btn-primary"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-1"><h:graphicImage name="images/products/product-2.jpg" alt="" class="img-responsive"/></td>
+                                    <td class="col-xs-4 col-md-5"><h4><a href="single-product.html">Fusce Aliquam</a><small>M, Black, Esprit</small></h4></td>
+                                    <td class="col-xs-2 col-md-1 text-center"><span><b>1 items</b></span></td>
+                                    <td class="col-xs-2 text-center"><span><b>$60</b></span></td>
+                                    <td class="col-xs-2 text-center"><a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></a><a href="" class="btn btn-primary"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-1"><h:graphicImage name="images/products/product-3.jpg" alt="" class="img-responsive"/></td>
+                                    <td class="col-xs-4 col-md-5"><h4><a href="single-product.html">Fusce Aliquam</a><small>M, Black, Esprit</small></h4></td>
+                                    <td class="col-xs-2 col-md-1 text-center"><span><b>1 items</b></span></td>
+                                    <td class="col-xs-2 text-center"><span><b>$60</b></span></td>
+                                    <td class="col-xs-2 text-center"><a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></a><a href="" class="btn btn-primary"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="" class="btn btn-primary">Clear All</a>
+                </article>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
