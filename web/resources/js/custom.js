@@ -502,3 +502,18 @@ function print_window() {
             e.print(),
             e.close()
 }
+
+$('#changeAvatar').on('click', function (e) {
+    $('#profileForm\\:chooseAvatarFile').click();
+});
+
+$('#profileForm\\:chooseAvatarFile').on('change', function (e) {
+    if (this.files && this.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#avatar').attr('src', e.target.result).fadeIn('slow');
+        };
+        reader.readAsDataURL(this.files[0]);
+    }
+});
